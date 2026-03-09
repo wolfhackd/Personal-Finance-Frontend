@@ -1,10 +1,11 @@
-import "./App.css";
+import "./shared/styles/Global.css";
 import {
   createRootRoute,
   createRoute,
   createRouter,
   RouterProvider,
 } from "@tanstack/react-router";
+import { Home } from "./pages/home/ui/home";
 
 const rootRoute = createRootRoute();
 
@@ -12,7 +13,7 @@ const rootRoute = createRootRoute();
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: "/",
-  component: () => <div>Principal fuk</div>,
+  component: () => <Home />,
 });
 
 //Route Tree
