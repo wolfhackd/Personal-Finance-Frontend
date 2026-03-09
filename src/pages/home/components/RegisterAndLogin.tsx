@@ -1,8 +1,10 @@
+import { Button } from "@base-ui/react";
+
 const RegisterAndLogin = () => {
   return (
     <div className="flex gap-2">
-      <button className="btn btn-primary">Entrar</button>
-      <button className="btn btn-primary">Inscrever-se</button>
+      <Button variant="outline">Entrar</Button>
+      <Button>Inscrever-se</Button>
     </div>
   );
 };
